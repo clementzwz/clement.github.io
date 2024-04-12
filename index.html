@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>CV</title>
+</head>
+<body>
+    <div id="entry">
+        
+    
+        <div id="blurbg"></div>
+        <div class="container">
+        <div id="main">
+            <img id="pfp" src="src/pfp.png">
+            <p id="name">Clement</p>
+            <div id="badges">
+                <img class="" id="" src="src/dev.png"/>
+                <img class="" id="" src="src/nk.png"/>
+                <img class="" id="" src="src/nodejs.png"/>
+            </div>
+            <a id="cv" href="cv.html">Acceder au CV</a>
+            <div id="separation"></div>
+            <a class="logo" id="git" href="https://github.com/Kaitoxic">
+                <img class="logo" id="git" src="src/github-logo.png"/>
+            </a>
+
+            <a class="logo" id="dsc" href="https://discord.com">
+                <img class="logo" id="dsc" src="src/discord-logo.png"/>
+            </a>
+
+            <a class="logo" id="ytb" href="https://www.youtube.com/@Kaitoxic">
+           
+                <img class="logo" id="ytb" src="src/youtube-logo.png"/>
+            </a>
+        </div>
+        </div>
+        <div id="cursorFollower"></div>
+    </div>
+    <button id="cc" onclick="openz()">Click To Enter</button>
+
+    <script>
+        document.getElementById("cc").addEventListener("mouseover", async function() {
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+                document.getElementById("cc").style.fontSize = "90px";
+                document.getElementById("cc").style.left = 30 +"%";
+                document.getElementById("cc").style.top = 44 +"%";
+                document.getElementById("cc").style.cursor = "crosshair";
+
+                document.getElementById("cc").style.transition = "all 2s";
+                await sleep(2000);
+                document.getElementById("cc").style.fontSize = "55px";
+                document.getElementById("cc").style.left = 37 +"%";
+                document.getElementById("cc").style.top = 44 +"%";
+                document.getElementById("cc").style.cursor = "crosshair";
+
+                document.getElementById("cc").style.transition = "all 2s";
+        });
+        function openz() {
+            document.getElementById("entry").style.filter = "none";
+            document.getElementById("cc").remove();
+            document.getElementById("main").style.opacity = "1";
+
+            // Ajoutez une transition à l'élément
+            entry.style.transition = "filter 1s ease";
+            main.style.transition = "opacity 1s ease";
+            var cursorFollower = document.getElementById("cursorFollower");
+
+            var numDrops = 100;
+
+            // Créez chaque goutte
+            for (var i = 0; i < numDrops; i++) {
+                // Créez un nouvel élément div pour la goutte
+                var drop = document.createElement("div");
+                drop.className = "raindrop";
+
+                // Appliquez les styles à la goutte
+                drop.style.position = "absolute";
+                drop.style.left = "0px";
+                drop.style.height = "2px";
+                drop.style.width = "2px";
+                drop.style.borderRadius = "50%";
+                drop.style.backgroundColor = "red";
+                drop.style.pointerEvents = "none";
+                drop.style.left = Math.random() * window.innerWidth + 'px'; // Position aléatoire
+                time = Math.random() * 5 + 1; // Durée aléatoire
+                drop.style.animation = `raindrop ${time}s linear infinite`;
+
+                // Ajoutez la goutte au document
+                document.body.appendChild(drop);
+                }
+
+                // Mettez à jour la position de chaque goutte lorsque la souris bouge
+                document.addEventListener("mousemove", function(event) {
+                    var drops = document.getElementsByClassName("raindrop");
+                    for (var i = 0; i < drops.length; i++) {
+                        drops[i].style.top = '0px';
+                    }
+                });
+            }
+    </script>
+</body>
+</html>

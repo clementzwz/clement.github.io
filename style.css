@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "minecraft_font";
+    src: url("assets/minecraft.ttf"); /* Mettez à jour le chemin si nécessaire */
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#entry {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+}
+
+#cc {
+    top: 44%;
+    left: 39%;
+    position: absolute;
+    font-size: 45px;
+    font-family: "minecraft_font";
+    color: #E6E1E2;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+@keyframes raindrop {
+    0% { top: 0; }
+    100% { top: calc(100vh - 20px); }
+}
+
+#blurbg {
+    background-image: url("src/bg2.jpg");
+    filter: blur(7px);
+    position: absolute;
+    top: 0%;
+    left: 0.5%;
+    top: 0.5%;
+    width: 99%;
+    height: 99%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main {
+    border: 3px solid;
+    border-radius: 10px;
+    position: absolute;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("src/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0;
+}
+
+.container > div {
+    top: 30%;
+    width: 48%;
+    height: 30%;
+}
+
+#main > .logo {
+    flex-grow: 1;
+    flex-basis: calc(30% -1 10px);
+    margin-right: 10px;
+    position: relative;
+    top: 65%;
+    max-width: 64px;
+    height: 64px;
+}
+
+#pfp {
+    top: 0%;
+    height: 45%;
+    position: absolute;
+    border-top-left-radius: 7px;
+}
+
+
+#name {
+    position: absolute;
+    left: 25%;
+    top: 0%;
+    font-family: "minecraft_font";
+    font-size: 26px;
+    color: aliceblue;
+}
+
+#badges {
+    border: 3.5px solid;
+    border-radius: 10%;
+    position: absolute;
+    width: 11%;
+    height: 12%;
+    top: 10%;
+    left: 40%;
+    background-color: aliceblue;
+}
+
+#badges > img {
+    height: 90%;
+    position: relative;
+    top: 5%;
+    left: 3%;
+}
+
+#cv {
+    position: absolute;
+    left: 24%;
+    top: 33%;
+    font-family: "minecraft_font";
+    font-size: 20px;
+    color: aliceblue;
+}
+
+#separation {
+    border-bottom: 3.5px solid;
+    border-radius: 25%;
+    position: absolute;
+    width: 50%;
+    top: 60%;
+    left: 24%;
+}
+
+#git {
+    left: 30%;
+}
+
+#dsc {
+    left: 0%;
+}
+
+#ytb {
+    left: -30%;
+}
+
+@media only screen and (max-width: 600px) {
+    .container > div {
+        top: 30%;
+        width: 70%;
+        height: 20%;
+    }
+    #main > .logo {
+        flex-basis: calc(50% - 10px);
+        margin-right: -25px;
+        position: relative;
+        top: 70%;
+        max-width: 40px;
+        height: 40px;
+    }
+    #pfp {
+        top: 0%;
+        height: 35%;
+        position: absolute;
+        border-top-left-radius: 7px;
+    }
+    #git {
+        left: 25%;
+    }
+    
+    #dsc {
+        left: -3.5%;
+    }
+    
+    #ytb {
+        left: -33%;
+    }
+}

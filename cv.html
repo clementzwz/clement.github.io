@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+        h1 {
+            text-align: center;
+            border: solid 1px #f0f0f0;
+        }
+        .section {
+            margin-bottom: 10px;
+            margin-left: 30px;
+        }
+        .section h2 {
+            margin-bottom: 10px;
+        }
+        .section p {
+            margin: 0;
+        }
+
+        .name {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .name:first-child {
+            margin-top: 8%;
+            margin-left: 8%;
+        }
+
+        .name:last-child {
+            margin-bottom: 10px;
+            margin-left: 8%;
+        }
+
+        #left {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 30%;
+            height: 100%;
+            background-color: bisque;
+            border-right: solid 1px wheat;
+        }
+
+        .section:first-child {
+            background-color: #f0f0f0;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            margin: 0;
+            height: 20%;
+            width: 100%;
+        }
+
+        #center {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            position: absolute;
+            top: 0px;
+            left: 35%;
+            width: 30%;
+            height: 100%;
+        }
+
+        h2 {
+            margin-bottom: 0px;
+        }
+
+        #right {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            position: absolute;
+            top: 20%;
+            left: 30%;
+            width: 65%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="center">
+        <h1>Mon CV</h1>
+        <h2 style="color: skyblue;">à propos :</h2>
+        <p>J'ai <b>19 ans</b> et cela fais maintenant plusieurs années que je touche à tout ce que
+            je trouve en <b>informatique</b>. J'ai commencé par le <b>développement web</b>, puis j'ai arrêté
+            assez rapidement car ce n'était pas ce dont j'avais besoin tout de suite. J'ai ensuite,
+            fais du <b>JavaScript puis du c, du c#, du python et même du NASM.</b> En parallèle, j'ai fais
+            de la <b>cyber-sécurité</b> sur des sites tel que <b>TryHackMe</b>, <b>Root-Me</b> et <b>HackTheBox</b>. J'ai aussi fais du
+            <b>montage vidéo et photo</b>. Il y a plusieurs mois je me suis mis au <b>web scraping et au monitoring</b> pour
+            faire tout genre de bot et d'optimiser voir même automatiser certaines tâches.
+        </p>
+        <h2 style="color: red;">Idées d'avenir :</h2>
+        <p>
+            Etant plutôt jeune et que la clientèle pour tout ce qui touche au scraping et monitoring afflue,
+            je compte travailler en <b>freelance</b> mais si besoin en <b>entreprise</b>. Je n'ai pas de difficulté à travailler
+            de nombreuses <b>heures</b> si la chose me plaît donc je pourrais alterner les deux?
+        </p>
+        <h2 style="color: violet;">Centre d'Intérêts :</h2>
+        <ul>
+            <li>Jeux-Vidéos</li>
+            <li>Sport</li>
+            <li>Programmation et cyber-sécurité</li>
+        </ul>
+    </div>
+    <div id="left">
+        <div class="section">
+            <p class="name">Duquairoux</p> 
+            <p class="name">Clément</p></div>
+        <div class="section">
+            <h2>Informations personnelles</h2>
+            <p>Nom: Clément</p>
+            <p>Adresse Mail: 20232947@etud.univ-evry.fr</p>
+            <p>Téléphone: ...</p>
+            <p>Email Perso: kaito.duquairoux@gmail.com</p>
+        </div>
+
+        <div class="section">
+            <h2>Compétences Principales :</h2>
+            <ul>
+                <li>Web Scraping</li>
+                <li>Monitoring</li>
+                <li>Montage Photos/Vidéos</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Etudes :</h2>
+            <ul>
+                <li>Collège et Lycée Saint Louis Saint Clément Collège jusqu'à première (non incluse)</li>
+                <li>Lycée Saint-Léon Première et Terminale</li>
+                <li>Actuellement à l'Université d'Evry Paris-Saclay en Portail Maths-Info (L1)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Objectifs :</h2>
+            <ul>
+                <li>Reprendre ma formation indépendante dans le Pentesting et la Cyber-Défense</li>
+                <li>Rédiger des cours sur l'automatisation des tâches et le monitoring</li>
+                <li>Devenir trilingue : Français, Anglais, Italien</li>
+            </ul>
+        </div>
+    </div>
+    <div id="right">
+        <img src="src/skillsthree2.png"/>
+    </div>
+</body>
+</html>
